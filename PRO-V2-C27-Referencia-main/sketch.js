@@ -8,7 +8,8 @@ var canvas, angle, tower, ground, cannon;
 var balls = [];
 var boats = [];
 var score = 0;
-var boatAnimation = [];
+/* Crie uma lista que se chama 'boatAnimation' para guardar a animação do barco */
+//???
 var boatSpritedata, boatSpritesheet;
 
 var brokenBoatAnimation = [];
@@ -20,11 +21,14 @@ var waterSplashSpritedata, waterSplashSpritesheet;
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
   towerImage = loadImage("./assets/tower.png");
-  boatSpritedata = loadJSON("assets/boat/boat.json");
+
+  /*Utilize 'loadJSON'  loadJSON() permite que o programa leia e 
+  interprete os dados armazenados em um arquivo JSON externo */
+  boatSpritedata = ???("assets/boat/boat.json");
   boatSpritesheet = loadImage("assets/boat/boat.png");
-  brokenBoatSpritedata = loadJSON("assets/boat/brokenBoat.json");
+  brokenBoatSpritedata = ???("assets/boat/brokenBoat.json");
   brokenBoatSpritesheet = loadImage("assets/boat/brokenBoat.png");
-  waterSplashSpritedata = loadJSON("assets/waterSplash/waterSplash.json");
+  waterSplashSpritedata = ???("assets/waterSplash/waterSplash.json");
   waterSplashSpritesheet = loadImage("assets/waterSplash/waterSplash.png");
 }
 
@@ -167,7 +171,8 @@ function showBoats() {
     }
     }
   } else {
-    var boat = new Boat(width, height - 60, 170, 170, -60, boatAnimation);
+    //Adicione a lista que guarda a animação do barco
+    var boat = new Boat(width, height - 60, 170, 170, -60, ???);
     boats.push(boat);
   }
 }
