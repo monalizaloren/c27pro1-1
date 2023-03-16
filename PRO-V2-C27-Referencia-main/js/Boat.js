@@ -13,7 +13,9 @@ class Boat {
     World.add(world, this.body);
   }
   animate() {
-    this.speed += 0.05;
+    /* Utilize um código que faz com que o objeto se mova mais
+     rapidamente com o tempo, dando a impressão de aceleração. */
+    //???
   }
 
   remove(index) {
